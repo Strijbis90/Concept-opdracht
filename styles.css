@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
 header {
-    border: 2px solid black; /* tijdelijk, om te zien waar de header zit */
+    /*border: 2px solid black; /* tijdelijk, om te zien waar de header zit */
 }
 
 nav ul {
@@ -36,7 +36,7 @@ nav ul {
 }
 
 nav a {
-    border: 1px solid black; /* tijdelijk */
+    /*border: 1px solid black; /* tijdelijk */
     text-decoration: none;
     color: black; /* tijdelijk, komt later wit te staan op de gradient */
 }
@@ -46,7 +46,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 60px 20px;
-    border: 2px solid black; /* nog steeds tijdelijk */
+    /*border: 2px solid black;  nog steeds tijdelijk */
 }
 nav {
     width: 100%;
@@ -56,7 +56,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 60px 20px;
+    padding: 5px 20px 100px;
     color: white; /* nav-links en intro-tekst erven dit automatisch over */
 }
 nav a {
@@ -80,11 +80,16 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 60px 20px;
+    padding: 16px 20px 100px; /* klein bovenin, groot onderin */
     color: white;
     background: linear-gradient(135deg, var(--paars), var(--blauw));
-    position: relative; /* nodig voor het icoontje straks */
-}.header-icon {
+    position: relative;
+}
+
+.intro {
+    margin-top: 60px; /* hier bepaal je apart hoeveel ruimte ONDER de nav komt */
+}
+.header-icon {
      position: absolute;
      bottom: -20px;
      left: 50%;
@@ -93,4 +98,7 @@ header {
 
 .header-icon img {
     width: 40px; /* pas aan op basis van het design / PerfectPixel */
+}
+.titel {
+    margin-bottom: 20px;
 }
