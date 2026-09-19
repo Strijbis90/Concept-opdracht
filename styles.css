@@ -148,7 +148,7 @@ header {
     color: var(--blauw);
     text-decoration: none;
 }
-.project:nth-child(even) {
+.project:nth-child(odd) {
     flex-direction: row-reverse;
 }
 .projects {
@@ -171,4 +171,41 @@ header {
     color: var(--paars);
     font-weight: bold;
     text-decoration: none;
+}
+.projects {
+    position: relative;
+    background-color: var(--lichtgrijs);
+    max-width: none;
+    padding: 80px 40px;
+    overflow: hidden;
+}
+
+.projects::before {
+    content: "Work";
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.projects h2 {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    z-index: 1;
+}
+
+.project {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+.project:first-child {
+    margin-top: 200px;
 }
