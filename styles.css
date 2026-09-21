@@ -283,3 +283,90 @@ header {
     margin: 0 auto 60px;
     z-index: 1;
 }
+.contact {
+    position: relative;
+    background: linear-gradient(135deg, var(--paars), var(--blauw));
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.contact h2 {
+    margin-bottom: 16px;
+}
+
+.contact > p {
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--grijs);
+}
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: var(--roze);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(237, 67, 133, 0.4);
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+footer {
+    background-color: var(--zwart);
+    color: white;
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 14px;
+}
+button[type="submit"] {
+     display: block;       /* was inline-block */
+     margin: 0 auto;        /* centreert 'm horizontaal */
+     padding: 14px 32px;
+     background-color: var(--roze);
+     color: white;
+     text-transform: uppercase;
+     font-weight: bold;
+     border: none;
+     border-radius: 30px;
+     box-shadow: 0 8px 20px rgba(237, 67, 133, 0.4);
+     cursor: pointer;
+     font-family: 'Roboto', sans-serif;
+ }
